@@ -35,6 +35,6 @@ class ModuleActions:
         updated_next_names()
 
     def indexed_clipboard_toggle():
-        """Views the keys of the indexed clipboard."""
+        """Views the indexed clipboard."""
         if gui.showing: gui.hide()
         else: gui.show()
