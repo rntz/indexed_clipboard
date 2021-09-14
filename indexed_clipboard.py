@@ -32,7 +32,7 @@ class ModuleActions:
     def indexed_clipboard_clear(index: str):
         """Clears the given index from the indexed clipboard."""
         del indexed_clipboard[index]
-        updated_next_names()
+        update_index_names()
 
     def indexed_clipboard_toggle():
         """Views the indexed clipboard."""
