@@ -1,11 +1,11 @@
 from talon import Module, Context, actions, clip
 
 mod = Module()
+ctx = Context()
+indexed_clipboard = {}
+
 mod.list('clipboard_index', desc="Names of indices into the indexed clipboard.")
 
-ctx = Context()
-
-indexed_clipboard = {}
 def update_index_names():
     ctx.lists['self.clipboard_index'] = list(indexed_clipboard.keys())
 
